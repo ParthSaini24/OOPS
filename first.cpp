@@ -10,25 +10,43 @@
 #include<iostream>
 using namespace std;
 
+// int main()
+// {
+//     int n,count=0;
+//     cout<< "Enter a number:";
+//     cin>>n;
+//     for(int i=2;i<n;i++)
+//     {
+//         if(n%i==0)
+//         {
+//             count++;
+//         }
+//     }
+//     if(count==0)
+//     {
+//         cout<<"Prime Number";
+//     }
+//     else
+//     {
+//         cout<<"Not a prime number";
+//     }
+//     return 0;
+// }
+
+
 int main()
 {
     int n,count=0;
     cout<< "Enter a number:";
     cin>>n;
-    for(int i=2;i<n;i++)
+    if(n%2==0)
     {
-        if(n%i==0)
-        {
-            count++;
-        }
-    }
-    if(count==0)
-    {
-        cout<<"Prime Number";
+        cout<< "Even";
     }
     else
     {
-        cout<<"Not a prime number";
+        cout<<"Odd";
     }
     return 0;
 }
+
