@@ -34,19 +34,45 @@ using namespace std;
 // }
 
 
+// int main()
+// {
+//     int n,count=0;
+//     cout<< "Enter a number:";
+//     cin>>n;
+//     if(n%2==0)
+//     {
+//         cout<< "Even";
+//     }
+//     else
+//     {
+//         cout<<"Odd";
+//     }
+//     return 0;
+// }
+
 int main()
 {
-    int n,count=0;
-    cout<< "Enter a number:";
-    cin>>n;
-    if(n%2==0)
+    int a,b,c,op;
+    cin>>a;
+    cin>>b;
+    cin>>op;
+    switch (op)
     {
-        cout<< "Even";
+    case 1:
+        c=a+b;
+        break;
+    case 2:
+        c=a-b;
+        break;
+    case 3:
+        c=a*b;
+        break;
+    case 4:
+        c=a/b;
+        break;
+    default:
+        break;
     }
-    else
-    {
-        cout<<"Odd";
-    }
+    cout<<c;
     return 0;
 }
-
